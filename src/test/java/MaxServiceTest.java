@@ -14,4 +14,16 @@ public class MaxServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldFimdMaxelse() {
+        MaxService service = new MaxService();
+        int a = 5;
+        int b = 8;
+
+        int expected = b;
+        int actual = service.max(a, b);
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
